@@ -22,6 +22,9 @@
     "fix-style": "tslint --fix -c tslint.json '{src,test,usage}/**/*{.ts,.tsx}'",
     "test": "jest"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "/dist",
     "/src"
