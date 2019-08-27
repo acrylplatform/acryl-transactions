@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "10"
+branches:
+  only:
+  - master
+jobs:
+  include:
+    - stage: npm release
+      node_js: "10"
+      deploy:
+        provider: npm
+        email: "eaz@acrylplatform.com"
+        api_key: $AUTH_TOKEN
+        skip_cleanup: true
