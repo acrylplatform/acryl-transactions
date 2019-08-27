@@ -4,6 +4,9 @@ node_js:
 branches:
   only:
   - master
+script:
+  - npm install
+  - npm build
 jobs:
   include:
     - stage: npm release

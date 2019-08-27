@@ -17,7 +17,6 @@
     "docs-generate": "typedoc --out docs src/",
     "preversion": "npm run build",
     "postversion": "npm publish",
-    "postpublish": "git push origin head",
     "build": "ts-node build/build.ts && webpack --config webpack.config.js --env",
     "fix-style": "tslint --fix -c tslint.json '{src,test,usage}/**/*{.ts,.tsx}'",
     "test": "jest"
