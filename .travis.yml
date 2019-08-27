@@ -6,7 +6,8 @@ branches:
   - master
 script:
   - npm install
-  - npm build
+  - npm test
+  - npm run build
 jobs:
   include:
     - stage: npm release
