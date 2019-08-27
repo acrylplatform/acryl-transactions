@@ -4,20 +4,20 @@ Using this library you can easily create and sign transactions for Acryl blockch
 It also allows you to multi-sign existing transactions or create them without signature at all.
 
 This library is a set of transaction constructing functions:
-* [Alias](https://acrylplatform.github.io/acryl-transactions/globals.html#alias)
-* [Issue](https://acrylplatform.github.io/acryl-transactions/globals.html#issue)
-* [Reissue](https://acrylplatform.github.io/acryl-transactions/globals.html#reissue)
-* [Burn](https://acrylplatform.github.io/acryl-transactions/globals.html#burn)
-* [Lease](https://acrylplatform.github.io/acryl-transactions/globals.html#lease)
-* [Cancel lease](https://acrylplatform.github.io/acryl-transactions/globals.html#cancellease)
-* [Transfer](https://acrylplatform.github.io/acryl-transactions/globals.html#transfer)
-* [Mass transfer](https://acrylplatform.github.io/acryl-transactions/globals.html#masstransfer)
-* [Set script](https://acrylplatform.github.io/acryl-transactions/globals.html#setscript)
-* [Data](https://acrylplatform.github.io/acryl-transactions/globals.html#data)
-* [Sponsorship](https://acrylplatform.github.io/acryl-transactions/globals.html#sponsorship)
-* [Set asset script](https://acrylplatform.github.io/acryl-transactions/globals.html#setassetscript)
-* [InvokeScript](https://acrylplatform.github.io/acryl-transactions/globals.html#invokescript)
-* [Order](https://acrylplatform.github.io/acryl-transactions/globals.html#order)
+* [Alias](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_alias_.html)
+* [Issue](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_issue_.html)
+* [Reissue](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_reissue_.html)
+* [Burn](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_burn_.html)
+* [Lease](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_lease_.html)
+* [Cancel lease](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_cancel_lease_.html)
+* [Transfer](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_transfer_.html)
+* [Mass transfer](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_mass_transfer_.html)
+* [Set script](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_set_script_.html)
+* [Data](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_data_.html)
+* [Sponsorship](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_sponsorship_.html)
+* [Set asset script](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_set_asset_script_.html)
+* [InvokeScript](https://acrylplatform.github.io/acryl-transactions/modules/_transactions_invoke_script_.html)
+* [Order](https://acrylplatform.github.io/acryl-transactions/modules/_requests_order_.html)
 
 Check full documentation on [GitHub Pages](https://acrylplatform.github.io/acryl-transactions/index.html).
 
