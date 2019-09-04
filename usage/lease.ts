@@ -4,7 +4,7 @@ const seed = 'example seed phrase'
 
 const params = {
   amount: 100,
-  recipient: '3P23fi1qfVw6RVDn4CH2a5nNouEtWNQ4THs',
+  recipient: '3EKhM51MGZrq8FTnvKoTg95srTiC2Votx1B',
   //senderPublicKey: 'by default derived from seed',
   //timestamp: Date.now(),
   //fee: 100000,

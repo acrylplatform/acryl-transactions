@@ -31,7 +31,7 @@ const { transfer } = require('@acryl/acryl-transactions')
 const seed = 'some example seed phrase'
 const signedTranserTx = transfer({ 
   amount: 1,
-  recipient: '3P6fVra21KmTfWHBdib45iYV6aFduh4WwC2',
+  recipient: '3EKhM51MGZrq8FTnvKoTg95srTiC2Votx1B',
   //Timestamp is optional but it was overrided, in case timestamp is not provided it will fallback to Date.now(). You can set any oftional params yourself. go check full docs
   timestamp: 1536917842558 
 }, seed)
@@ -50,13 +50,13 @@ Output will be a signed transfer transaction:
   id: '8NrUwgKRCMFbUbqXKQAHkGnspmWHEjKUSi5opEC6Havq',
   type: 4,
   version: 2,
-  recipient: '3P6fVra21KmTfWHBdib45iYV6aFduh4WwC2',
+  recipient: '3EKhM51MGZrq8FTnvKoTg95srTiC2Votx1B',
   attachment: undefined,
   feeAssetId: undefined,
   assetId: undefined,
   amount: 1,
   fee: 100000,
-  senderPublicKey: '6nR7CXVV7Zmt9ew11BsNzSvVmuyM5PF6VPbWHW9BHgPq',
+  senderPublicKey: '4MUrTiAwkVhRdkUj2Ya4LZbM7tGgd4sinLsGRZBvBvNa',
   timestamp: 1536917842558,
   proofs: [
     '25kyX6HGjS3rkPTJRj5NVH6LLuZe6SzCzFtoJ8GDkojY9U5oPfVrnwBgrCHXZicfsmLthPUjTrfT9TQL2ciYrPGE'
@@ -68,9 +68,9 @@ You can also create transaction, but not sign it:
 ```javascript
 const unsignedTransferTx = transfer({ 
   amount: 1,
-  recipient: '3P6fVra21KmTfWHBdib45iYV6aFduh4WwC2',
+  recipient: '3EKhM51MGZrq8FTnvKoTg95srTiC2Votx1B',
   //senderPublicKey is required if you omit seed
-  senderPublicKey: '6nR7CXVV7Zmt9ew11BsNzSvVmuyM5PF6VPbWHW9BHgPq' 
+  senderPublicKey: '4MUrTiAwkVhRdkUj2Ya4LZbM7tGgd4sinLsGRZBvBvNa' 
 })
 ```
 
@@ -86,13 +86,13 @@ So now there are two proofs:
   id: '8NrUwgKRCMFbUbqXKQAHkGnspmWHEjKUSi5opEC6Havq',
   type: 4,
   version: 2,
-  recipient: '3P6fVra21KmTfWHBdib45iYV6aFduh4WwC2',
+  recipient: '3EKhM51MGZrq8FTnvKoTg95srTiC2Votx1B',
   attachment: undefined,
   feeAssetId: undefined,
   assetId: undefined,
   amount: 1,
   fee: 100000,
-  senderPublicKey: '6nR7CXVV7Zmt9ew11BsNzSvVmuyM5PF6VPbWHW9BHgPq',
+  senderPublicKey: '4MUrTiAwkVhRdkUj2Ya4LZbM7tGgd4sinLsGRZBvBvNa',
   timestamp: 1536917842558,
   proofs: [
     '25kyX6HGjS3rkPTJRj5NVH6LLuZe6SzCzFtoJ8GDkojY9U5oPfVrnwBgrCHXZicfsmLthPUjTrfT9TQL2ciYrPGE',

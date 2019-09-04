@@ -5,7 +5,7 @@ const seed = 'example seed phrase'
 //Transfering 1 Acryl
 const params = {
   amount: 100000000,
-  recipient: '3P23fi1qfVw6RVDn4CH2a5nNouEtWNQ4THs',
+  recipient: '3EKhM51MGZrq8FTnvKoTg95srTiC2Votx1B',
   //feeAssetId: undefined
   //assetId: undefined
   //attachment: undefined
