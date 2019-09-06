@@ -109,6 +109,24 @@ const nodeUrl = 'https://nodes.acrylplatform.com';
 
 broadcast(signedTx, nodeUrl).then(resp => console.log(resp))
 ```
+
+### Alias
+Simlpe alias creation example:
+```javascript
+const { transfer } = require('@acryl/acryl-transactions')
+const { broadcast } =  require('@acryl/acryl-transactions');
+const nodeUrl = 'https://nodes.acrylplatform.com';
+const seed = 'some example seed phrase'
+
+const signedAliasTx = alias({
+    alias: "someAlias"
+    //Timestamp is optional but it was overrided, in case timestamp is not provided it will fallback to Date.now(). You can set any oftional params yourself. go check full docs
+  timestamp: 1536917842558 
+}, seed);
+
+broadcast(signedAliasTx, nodeUrl).then(resp => console.log(resp))
+```
+
 You can send tx to any acryl node you like:. E.g.:
 * https://nodestestnet.acrylplatform.com - Acryl TESTNET nodes hosted by AcrylPlatform
 * https://nodes.acrylplatform.com - Acryl MAINNET nodes hosted by AcrylPlatform
