@@ -113,7 +113,7 @@ broadcast(signedTx, nodeUrl).then(resp => console.log(resp))
 ### Alias
 Simlpe alias creation example:
 ```javascript
-const { transfer } = require('@acryl/acryl-transactions')
+const { alias } = require('@acryl/acryl-transactions')
 const { broadcast } =  require('@acryl/acryl-transactions');
 const nodeUrl = 'https://nodes.acrylplatform.com';
 const seed = 'some example seed phrase'
