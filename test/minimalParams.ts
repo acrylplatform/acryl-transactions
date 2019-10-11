@@ -18,8 +18,8 @@ export const burnMinimalParams: IBurnParams = {
 }
 
 export const leaseMinimalParams: ILeaseParams = {
-  recipient: '3N3Cn2pYtqzj7N9pviSesNe8KG9Cmb718Y1',
-  amount: 10000,
+  recipient: '3JGVZkdiFoYdSDtcNESA1SvPiakQ6KdFAyP',
+  amount: 100,
 }
 
 export const cancelLeaseMinimalParams: ICancelLeaseParams = {
@@ -27,7 +27,7 @@ export const cancelLeaseMinimalParams: ICancelLeaseParams = {
 }
 
 export const invokeScriptMinimalParams: IInvokeScriptParams = {
-  dApp: '3N3Cn2pYtqzj7N9pviSesNe8KG9Cmb718Y1',
+  dApp: '3JGVZkdiFoYdSDtcNESA1SvPiakQ6KdFAyP',
   call: {
     function: 'foo',
     args: [{
@@ -40,11 +40,11 @@ export const invokeScriptMinimalParams: IInvokeScriptParams = {
 export const massTransferMinimalParams: IMassTransferParams = {
   transfers: [
     {
-      recipient: '3N3Cn2pYtqzj7N9pviSesNe8KG9Cmb718Y1',
+      recipient: '3JGVZkdiFoYdSDtcNESA1SvPiakQ6KdFAyP',
       amount: 10000,
     },
     {
-      recipient: '3N3Cn2pYtqzj7N9pviSesNe8KG9Cmb718Y1',
+      recipient: '3JGVZkdiFoYdSDtcNESA1SvPiakQ6KdFAyP',
       amount: 10000,
     },
   ],
@@ -92,7 +92,7 @@ export const issueMinimalParams: IIssueParams = {
 }
 
 export const transferMinimalParams: ITransferParams = {
-  recipient: '3N3Cn2pYtqzj7N9pviSesNe8KG9Cmb718Y1',
+  recipient: '3JGVZkdiFoYdSDtcNESA1SvPiakQ6KdFAyP',
   amount: 10000,
 }
 

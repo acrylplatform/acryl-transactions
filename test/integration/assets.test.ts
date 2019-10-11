@@ -118,58 +118,58 @@ describe('Assets', () => {
   describe('Scripted assets', () => {
     let assetId = ''
 
-    // it('Should issue token with script. Should execute token script', async () => {
-    //   // script prohibits burn transaction
-    //   const script = 'AQQAAAAHJG1hdGNoMAUAAAACdHgDCQAAAQAAAAIFAAAAByRtYXRjaDACAAAAD0J1cm5UcmFuc2FjdGlvbgQAAAABdAUAAAAHJG1hdGNoMAcGPmRSDA=='
-    //   const txParams: IIssueParams = {
-    //     name: 'scriptedToken',
-    //     description: 'no description',
-    //     decimals: 3,
-    //     quantity: 10000,
-    //     reissuable: true,
-    //     chainId: CHAIN_ID,
-    //     script,
-    //   }
-    //   const tx = issue(txParams, account1)
-    //   const resp = await broadcast(tx, API_BASE)
-    //   expect(resp.type).toEqual(3)
-    //   assetId = tx.id
-    //   await waitForTx(assetId, { timeout: TIMEOUT + 20000, apiBase: API_BASE })
+    it('Should issue token with script. Should execute token script', async () => {
+      // script prohibits burn transaction
+      const script = 'AQQAAAAHJG1hdGNoMAUAAAACdHgDCQAAAQAAAAIFAAAAByRtYXRjaDACAAAAD0J1cm5UcmFuc2FjdGlvbgQAAAABdAUAAAAHJG1hdGNoMAcGPmRSDA=='
+      const txParams: IIssueParams = {
+        name: 'scriptedToken',
+        description: 'no description',
+        decimals: 3,
+        quantity: 10000,
+        reissuable: true,
+        chainId: CHAIN_ID,
+        script,
+      }
+      const tx = issue(txParams, account1)
+      const resp = await broadcast(tx, API_BASE)
+      expect(resp.type).toEqual(3)
+      assetId = tx.id
+      await waitForTx(assetId, { timeout: TIMEOUT + 20000, apiBase: API_BASE })
 
-    //   const burnParams: IBurnParams = {
-    //     assetId,
-    //     quantity: 1000,
-    //     chainId: CHAIN_ID,
-    //   }
-    //   const burnTx = burn(burnParams, account1)
-    //   const respPromise = broadcast(burnTx, API_BASE)
-    //   await expect(respPromise).rejects.toMatchObject({ error: 308 })
+      const burnParams: IBurnParams = {
+        assetId,
+        quantity: 1000,
+        chainId: CHAIN_ID,
+      }
+      const burnTx = burn(burnParams, account1)
+      const respPromise = broadcast(burnTx, API_BASE)
+      await expect(respPromise).rejects.toMatchObject({ error: 308 })
 
-    // }, TIMEOUT + 20000)
+    }, TIMEOUT + 20000)
 
-    // it('Should set new token script. Should execute new token script', async () => {
-    //   // script allows everything
-    //   const script = 'AQa3b8tH'
-    //   const txParams: ISetAssetScriptParams = {
-    //     assetId,
-    //     chainId: CHAIN_ID,
-    //     script,
-    //   }
-    //   const tx = setAssetScript(txParams, account1)
-    //   const resp = await broadcast(tx, API_BASE)
-    //   expect(resp.type).toEqual(15)
-    //   await waitForTx(tx.id, { timeout: TIMEOUT, apiBase: API_BASE })
+    it('Should set new token script. Should execute new token script', async () => {
+      // script allows everything
+      const script = 'AQa3b8tH'
+      const txParams: ISetAssetScriptParams = {
+        assetId,
+        chainId: CHAIN_ID,
+        script,
+      }
+      const tx = setAssetScript(txParams, account1)
+      const resp = await broadcast(tx, API_BASE)
+      expect(resp.type).toEqual(15)
+      await waitForTx(tx.id, { timeout: TIMEOUT, apiBase: API_BASE })
 
-    //   const burnParams: IBurnParams = {
-    //     assetId,
-    //     quantity: '1000',
-    //     chainId: CHAIN_ID,
-    //     additionalFee: 400000,
-    //   }
-    //   const burnTx = burn(burnParams, account1)
-    //   const burnResp = await broadcast(burnTx, API_BASE)
-    //   expect(burnResp.type).toEqual(6)
-    // }, TIMEOUT + 20000)
+      const burnParams: IBurnParams = {
+        assetId,
+        quantity: '1000',
+        chainId: CHAIN_ID,
+        additionalFee: 400000,
+      }
+      const burnTx = burn(burnParams, account1)
+      const burnResp = await broadcast(burnTx, API_BASE)
+      expect(burnResp.type).toEqual(6)
+    }, TIMEOUT + 20000)
 
   })
 
