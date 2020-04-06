@@ -1,6 +1,6 @@
 {
   "name": "@acryl/acryl-transactions",
-  "version": "3.16.7",
+  "version": "3.16.8",
   "description": "Build and sign(multi-sign) transactions for Acryl blockchain.",
   "keywords": [
     "acryl",

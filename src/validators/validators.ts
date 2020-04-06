@@ -181,7 +181,7 @@ export const isPublicKey = isHash
 
 
 export const isAssetId = ifElse(
-    orEq(['', null, undefined, 'WAVES']),
+    orEq(['', null, undefined, 'ACRYL']),
     defaultValue(true),
     isHash
 );

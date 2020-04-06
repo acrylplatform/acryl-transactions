@@ -65,7 +65,7 @@ describe('Node interaction', () => {
     }
     const result = data(dataParams, 'seed')
 
-    await expect(broadcast(result, nodeUrl)).rejects
+    await expect(broadcast(result, nodeUrl)).resolves
       .toMatchObject({error: 303})
   })
 

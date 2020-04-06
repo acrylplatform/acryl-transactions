@@ -222,7 +222,7 @@ describe('Validators', () => {
         it('Validate assetId', () => {
             expect(validators.isAssetId('474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu')).toBe(true)
             expect(validators.isAssetId(null)).toBe(true)
-            expect(validators.isAssetId('WAVES')).toBe(true)
+            expect(validators.isAssetId('ACRYL')).toBe(true)
         })
         
         it('Validate by schema', () => {
@@ -268,12 +268,12 @@ describe('Validators', () => {
                 type: TRANSACTION_TYPE.TRANSFER,
                 version: 2,
                 senderPublicKey: '2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr',
-                assetId: 'WAVES',
+                assetId: 'ACRYL',
                 recipient: 'alias:A:test',
                 amount: 100000,
                 attachment: null,
                 fee: 100000,
-                feeAssetId: 'WAVES',
+                feeAssetId: 'ACRYL',
                 timestamp: Date.now(),
             } as any
    

@@ -128,7 +128,7 @@ export function submitOrder(ord: TOrder, matcherUrl: string) {
  * @param matcherUrl - matcher address to send order cancel to. E.g. https://matcher.acrylplatform.com/
  */
 export function cancelSubmittedOrder(co: ICancelOrder, amountAsset: string | null, priceAsset: string | null, matcherUrl: string) {
-  return axios.post(`matcher/orderbook/${amountAsset || 'WAVES'}/${priceAsset || 'WAVES'}/cancel`, JSON.stringify(co), {
+  return axios.post(`matcher/orderbook/${amountAsset || 'ACRYL'}/${priceAsset || 'ACRYL'}/cancel`, JSON.stringify(co), {
     baseURL: matcherUrl,
     headers: { 'content-type': 'application/json' },
   })

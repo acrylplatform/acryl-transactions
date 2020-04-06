@@ -90,7 +90,7 @@ export function order(paramsOrOrder: any, seed?: TSeedTypes): TOrder & WithId {
   }
 
   if (ord.version === 3) {
-    ord.matcherFeeAssetId = paramsOrOrder.matcherFeeAssetId === 'WAVES' ? null : paramsOrOrder.matcherFeeAssetId
+    ord.matcherFeeAssetId = paramsOrOrder.matcherFeeAssetId === 'ACRYL' ? null : paramsOrOrder.matcherFeeAssetId
   }
 
   const bytes = binary.serializeOrder(ord)

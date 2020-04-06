@@ -79,7 +79,7 @@ export async function waitForTx(txId: string, options?: INodeRequestOptions): Pr
   const promise = (): Promise<TTx> => axios.get(`transactions/info/${txId}`, { baseURL: apiBase })
     .then(x => {
       to.cancel()
-      return x.data
+      return x.data.height ? x.data : promise()
     })
     .catch(_ => delay(1000)
       .then(_ => expired ?

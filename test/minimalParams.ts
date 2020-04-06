@@ -5,7 +5,8 @@ import {
   ILeaseParams,
   IMassTransferParams, IOrderParams, IReissueParams, ISetAssetScriptParams, ISetScriptParams, ITransferParams,
   TRANSACTION_TYPE,
-  ICancelOrderParams
+  ICancelOrderParams,
+  DATA_FIELD_TYPE
 } from '../src/transactions'
 
 export const aliasMinimalParams: IAliasParams = {
@@ -70,7 +71,7 @@ export const dataMinimalParams: IDataParams = {
       value: Uint8Array.from([1, 2, 3, 4]),
     }, {
       key: 'someparam2',
-      type: 'binary',
+      type: DATA_FIELD_TYPE.BINARY,
       value: 'base64:YXNkYQ==',
     }, {
       key: 'someparam3',

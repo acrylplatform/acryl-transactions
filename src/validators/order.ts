@@ -36,7 +36,7 @@ const orderScheme = {
 };
 
 const v1_2_OrderScheme = {
-  matcherFeeAssetId: orEq([undefined, null, 'WAVES'])
+  matcherFeeAssetId: orEq([undefined, null, 'ACRYL'])
 }
 
 const v3_OrderScheme = {

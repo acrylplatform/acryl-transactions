@@ -51,4 +51,4 @@ export function invokeScript(paramsOrTx: any, seed?: TSeedTypes): IInvokeScriptT
 
 const mapPayment = (payments?: IInvokeScriptPayment[]): IInvokeScriptPayment[] => payments == null
   ? []
-  : payments.map(pmt => ({...pmt, assetId: pmt.assetId === 'WAVES' ? null : pmt.assetId}))
+  : payments.map(pmt => ({...pmt, assetId: pmt.assetId === 'ACRYL' ? null : pmt.assetId}))
